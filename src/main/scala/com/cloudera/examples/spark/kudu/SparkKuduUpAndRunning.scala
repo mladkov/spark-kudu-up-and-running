@@ -34,9 +34,9 @@ object SparkKuduUpAndRunning {
     val sqlContext = new SQLContext(sc)
 
     // Comma-separated list of Kudu masters with port numbers
-    val master1 = "ip-10-13-4-140.ec2.internal"
-    val master2 = "ip-10-13-4-203.ec2.internal"
-    val master3 = "ip-10-13-4-107.ec2.internal"
+    val master1 = "<changeme-kudu-master1>"
+    val master2 = "<changeme-kudu-master2>"
+    val master3 = "<changeme-kudu-master3>"
     val kuduMasters = Seq(master1, master2, master3).mkString(",")
 
     // Create an instance of a KuduContext
